@@ -18,7 +18,7 @@ node {
        sh 'bin/makeindex'
    }
    stage('Results') {
-      archiveArtifacts 'index.jsp'
+      archiveArtifacts 'index.jaaasp'
    }
 }
-Run the maven build, I am seeing this. Coming soon
+Run the maven build, I am seeing this. Coming soon in the building.
