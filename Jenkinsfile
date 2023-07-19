@@ -4,7 +4,7 @@ node {
    stage('Preparation') { // for display purposes
      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/linuxacademy/content-cje-prebuild.git']]])
            
-      mvnHome = tool 'M5'
+      mvnHome = tool 'M8'
    }
    stage('Build') {
       // Run the maven build
@@ -21,4 +21,4 @@ node {
       archiveArtifacts 'index.jsp'
    }
 }
-Run the maven build, I am seeing this. Coming soon in the building.
+Run the maven build, I am seeing this. Coming soon in the building.  Yeeeees!!!!
