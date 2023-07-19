@@ -4,7 +4,7 @@ node {
    stage('Preparation') { // for display purposes
      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/linuxacademy/content-cje-prebuild.git']]])
            
-      mvnHome = tool 'M4'
+      mvnHome = tool 'M5'
    }
    stage('Build') {
       // Run the maven build
